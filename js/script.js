@@ -8,8 +8,11 @@ app.controller('pyramidCtrl', function ($scope) {
     for (var i = 1; i <=num; i++) {
 
         for (var j = 1; j <= i; j++) {
-
-           $scope.result.push(j)
+            var obj ={
+                i: i,
+                j: j
+            }
+           $scope.result.push(obj)
           
             
             console.log("pattern",$scope.result);

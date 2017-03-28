@@ -11,10 +11,9 @@
 <div ng-controller="pyramidCtrl">
 <h3><br>AngularJs pyramid </h3></br>
 <input type="number" ng-model="num" />
-<button class="btn-primary" type="submit"  ng-click="pyramid(num)">click</button><!--
-<div ng-repeat=" output in result track by $index">-->
-<div ng-bind="result"></div>
-{{}}</div>
+<button class="btn-primary" type="submit"  ng-click="pyramid(num)">click</button>
+<div ng-repeat="output in result | filter:{i:{j}}">
+{{output}}</div>
 
 
 </body>
