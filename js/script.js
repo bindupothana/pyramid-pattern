@@ -4,19 +4,22 @@ app.controller('pyramidCtrl', function ($scope) {
     $scope.result=[];
     // $scope.result.push(j)
     // $scope.pyramid="pyramid";
-    
+     
     for (var i = 1; i <=num; i++) {
-
+         var obj = []
         for (var j = 1; j <= i; j++) {
-            var obj ={
-                i: i,
-                j: j
-            }
-           $scope.result.push(obj)
+                     // var obj = []
+
+            // var obj ={
+            //     i: i,
+            //     j: j
+            // }
+           obj.push(j);
           
             
             console.log("pattern",$scope.result);
         }
+        $scope.result.push(obj)
         console.log("\n");
     }
 
